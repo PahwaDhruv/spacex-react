@@ -1,0 +1,45 @@
+.container{
+    text-align : center;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    flex: 25%;
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .col {
+      flex: 50%;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+
+  .card {
+      height : 450px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+    padding-top : 10px;
+  }
+
+  .card-title {
+      color: blue;
+  }
+
+  .card-body {
+    padding: 0 16px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
